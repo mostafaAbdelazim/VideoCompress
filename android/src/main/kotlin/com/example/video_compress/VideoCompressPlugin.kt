@@ -160,7 +160,7 @@ class VideoCompressPlugin : MethodCallHandler, FlutterPlugin {
                                 json.put("isCancel", false)
                                 result.success(json.toString())
                                 if (deleteOrigin) {
-                                    File(path).delete()
+                                    File(path as String).delete()
                                 }
                             }
 
